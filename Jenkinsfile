@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/Shrinivas-Design/mvnrepo.git';
+                    git 'https://github.com/KomalR10/mvnrepo.git';
                 }
             }
         }
