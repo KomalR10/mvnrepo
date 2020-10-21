@@ -13,7 +13,7 @@ pipeline {
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "mobilebank-snap"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "nexus-cred"
+        NEXUS_CREDENTIAL_ID = "Nexus_credential_ 21oct"
     }
     stages {
         stage("Code-Checkout") {
@@ -91,7 +91,7 @@ pipeline {
         }
 		stage("DeployToTomcat") {
             steps {
-               deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://localhost:8084')], contextPath: 'my', onFailure: false, war: 'my.war'
+               deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8090')], contextPath: 'my', onFailure: false, war: 'my.war'
             }
         }
 		
