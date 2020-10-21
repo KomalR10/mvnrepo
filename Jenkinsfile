@@ -72,7 +72,7 @@ pipeline {
                                 type: pom.packaging],
                                 // Lets upload the pom.xml file for additional information for Transitive dependencies
                                 [artifactId: pom.artifactId,
-                                classifier: '',
+                                classifier: '', 
                                 file: "pom.xml",
                                 type: "pom"]
                             ]
