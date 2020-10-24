@@ -86,7 +86,7 @@ pipeline {
 		
 		 stage("DownloadArtifact") {
             steps {
-               bat "curl http://localhost:8081/repository/mobilebank-snap/org/javaee7/sample/javaee7-simple-sample/1.0-SNAPSHOT/javaee7-simple-sample-1.0-20200915.053650-3.war --output my.war"
+               bat "curl http://localhost:8081/repository/mobilebank-snap/org/javaee7/sample/javaee7-simple-sample/1.0-SNAPSHOT/javaee7-simple-sample-1.0-20200924.125810-1.war --output my.war"
             }
         }
 		stage("DeployToTomcat") {
